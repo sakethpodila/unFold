@@ -1,0 +1,45 @@
+# Credentials and private configuration
+.env
+.env.*
+!.env.example
+secrets/
+
+# Private finance data, receipts and diagnostics
+private/
+data/
+receipts/
+logs/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+
+# Local runtimes and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+node_modules/
+dist/
+build/
+
+# Downloaded third-party source, dependencies and documentation
+.cache/
+
+# Django local output and database backups (keep schema migrations tracked)
+media/
+staticfiles/
+backups/
+pgdata/
+*.sql
+*.dump
+*.backup
+.coverage
+htmlcov/

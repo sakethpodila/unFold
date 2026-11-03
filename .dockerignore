@@ -1,0 +1,37 @@
+# Allow only application/build inputs. Add new build inputs deliberately.
+**
+!Dockerfile
+!README.md
+!pyproject.toml
+!requirements*.txt
+!requirements*.lock
+!uv.lock
+!src/
+!src/**
+!tests/
+!tests/**
+
+# Exclude private data even if it appears beneath an allowed directory.
+**/.env
+**/.env.*
+**/secrets
+**/private
+**/receipts
+**/media
+**/data
+**/logs
+**/.venv
+**/.cache
+**/.git
+**/__pycache__
+**/.pytest_cache
+**/*.py[cod]
+**/*.db
+**/*.db-*
+**/*.sqlite*
+**/*.sql
+**/*.dump
+**/*.backup
+**/*.log
+**/*.pem
+**/*.key

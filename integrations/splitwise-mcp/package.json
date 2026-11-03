@@ -1,0 +1,15 @@
+{
+  "name": "@unfold/splitwise-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only bridge around the reviewed Splitwise MCP dependency",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test ../../tests/integration/splitwise-mcp.test.mjs",
+    "test:launcher": "pwsh -NoProfile -File ../../scripts/check_splitwise_account.ps1 -Synthetic"
+  }
+}
